@@ -12,10 +12,16 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var initialWireFrame : LoginWireFrame?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        initialWireFrame = LoginWireFrame()
+        window!.rootViewController = initialWireFrame!.viewController()
+        
+        window!.makeKeyAndVisible()
+        
         return true
     }
 

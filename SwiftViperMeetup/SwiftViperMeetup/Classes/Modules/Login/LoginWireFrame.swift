@@ -10,9 +10,19 @@ import Foundation
 import UIKit
 
 protocol LoginRouter : class {
-
 }
 
 class LoginWireFrame : LoginRouter {
-
+    private var loginView : LoginViewController
+    private var loginPresenter : LoginPresenter
+    
+    init() {
+        loginView = LoginViewController.loginView()
+        loginPresenter = LoginPresenter(view: loginView)
+        loginView.loginPresenter = loginPresenter
+    }
+    
+    func viewController() -> UIViewController {
+        return loginView
+    }
 }

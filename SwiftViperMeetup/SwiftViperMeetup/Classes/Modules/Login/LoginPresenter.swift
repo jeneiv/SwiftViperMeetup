@@ -9,13 +9,23 @@
 import Foundation
 
 protocol LoginEventHandler : class {
-    
+    func handleLogin(userName : String, password : String)
+    func handleForgottenPassword()
 }
 
 class LoginPresenter : LoginEventHandler {
     weak var loginView : LoginView?
+    lazy var loginService = LoginService()
     
     init(view : LoginView) {
         loginView = view
+    }
+    
+    func handleLogin(userName : String, password : String) {
+        println("Trying to log in with un: \(userName), pw: \(password)")
+    }
+    
+    func handleForgottenPassword() {
+        println("Forgotten Password Event")
     }
 }
