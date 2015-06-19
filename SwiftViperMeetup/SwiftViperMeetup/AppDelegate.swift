@@ -18,7 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
         initialWireFrame = LoginWireFrame()
-        window!.rootViewController = initialWireFrame!.viewController()
+        
+        let navigationController = UINavigationController(rootViewController: initialWireFrame!.viewController())
+        
+        window!.rootViewController = navigationController
         
         window!.makeKeyAndVisible()
         

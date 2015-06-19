@@ -63,6 +63,19 @@
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="txo-dO-Y6B">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="HaA-cw-6JC">
+                                        <rect key="frame" x="290" y="290" width="20" height="20"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="HaA-cw-6JC" secondAttribute="centerX" id="oak-tF-x9h"/>
+                                    <constraint firstAttribute="centerY" secondItem="HaA-cw-6JC" secondAttribute="centerY" id="rae-Dp-3xf"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -75,6 +88,7 @@
                             <constraint firstItem="os1-6L-TaQ" firstAttribute="height" secondItem="uUw-Es-nJr" secondAttribute="height" id="DwZ-S1-Ab1"/>
                             <constraint firstItem="wgt-1M-Asb" firstAttribute="centerY" secondItem="uUw-Es-nJr" secondAttribute="centerY" constant="33.5" id="GgW-Ve-Mmh"/>
                             <constraint firstItem="X49-2M-vRw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="42" id="Guk-I2-o7G"/>
+                            <constraint firstItem="txo-dO-Y6B" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="NX7-v8-hph"/>
                             <constraint firstItem="zKu-KH-CLk" firstAttribute="centerX" secondItem="X49-2M-vRw" secondAttribute="centerX" id="Qex-cB-Nus"/>
                             <constraint firstItem="wgt-1M-Asb" firstAttribute="width" secondItem="uUw-Es-nJr" secondAttribute="width" id="Qic-Qh-pyh"/>
                             <constraint firstItem="zKu-KH-CLk" firstAttribute="width" secondItem="X49-2M-vRw" secondAttribute="width" id="Syn-iB-J3i"/>
@@ -82,7 +96,10 @@
                             <constraint firstItem="X49-2M-vRw" firstAttribute="top" secondItem="zKu-KH-CLk" secondAttribute="bottom" constant="16" id="cAR-lE-qZb"/>
                             <constraint firstItem="os1-6L-TaQ" firstAttribute="width" secondItem="uUw-Es-nJr" secondAttribute="width" id="eJ1-be-yPY"/>
                             <constraint firstAttribute="trailingMargin" secondItem="os1-6L-TaQ" secondAttribute="trailing" constant="41" id="fvC-Gr-q61"/>
+                            <constraint firstItem="txo-dO-Y6B" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="haD-yE-HrB"/>
+                            <constraint firstAttribute="width" secondItem="txo-dO-Y6B" secondAttribute="width" id="kj1-hF-3fA"/>
                             <constraint firstItem="wgt-1M-Asb" firstAttribute="centerX" secondItem="uUw-Es-nJr" secondAttribute="centerX" id="n57-au-Vkl"/>
+                            <constraint firstAttribute="height" secondItem="txo-dO-Y6B" secondAttribute="height" id="uxD-bZ-CLM"/>
                             <constraint firstItem="os1-6L-TaQ" firstAttribute="centerX" secondItem="uUw-Es-nJr" secondAttribute="centerX" id="xHo-oT-tZW"/>
                             <constraint firstItem="zKu-KH-CLk" firstAttribute="height" secondItem="uUw-Es-nJr" secondAttribute="height" id="yb0-QC-RNi"/>
                         </constraints>
@@ -94,6 +111,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="loadingOverlayView" destination="txo-dO-Y6B" id="qG0-hT-RG2"/>
                         <outlet property="loginErrorMessageLabel" destination="wgt-1M-Asb" id="R4L-Mx-HIi"/>
                         <outlet property="passwordTextField" destination="uUw-Es-nJr" id="neA-6I-KRZ"/>
                         <outlet property="userNameTextField" destination="os1-6L-TaQ" id="3oc-i8-8nR"/>

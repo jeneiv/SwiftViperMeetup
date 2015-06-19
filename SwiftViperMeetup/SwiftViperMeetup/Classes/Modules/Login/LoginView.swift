@@ -21,8 +21,11 @@ class LoginViewController : UIViewController, LoginView {
     @IBOutlet weak var userNameTextField : UITextField?
     @IBOutlet weak var passwordTextField : UITextField?
     @IBOutlet weak var loginErrorMessageLabel : UIView?
+    @IBOutlet weak var loadingOverlayView : UIView?
     
     @IBAction func loginButtonPressed(sender : UIButton) {
+        loginErrorMessageLabel?.hidden = true
+        loadingOverlayView?.hidden = false
         loginPresenter!.handleLogin(userNameTextField!.text, password: passwordTextField!.text)
     }
     
@@ -35,13 +38,21 @@ class LoginViewController : UIViewController, LoginView {
     }
     
     func displayLoginError() {
+        loadingOverlayView?.hidden = true
         loginErrorMessageLabel?.hidden = false
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.title = "Login"
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         loginErrorMessageLabel?.hidden = true
+        loadingOverlayView?.hidden = true
     }
+    
 }
 
 extension LoginViewController {
