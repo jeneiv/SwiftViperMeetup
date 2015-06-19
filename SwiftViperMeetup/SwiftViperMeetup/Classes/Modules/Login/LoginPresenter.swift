@@ -14,6 +14,7 @@ protocol LoginEventHandler : class {
 }
 
 class LoginPresenter : LoginEventHandler {
+    weak var loginWireFrame : LoginRouter?
     weak var loginView : LoginView?
     lazy var loginService = LoginService()
     
@@ -23,9 +24,22 @@ class LoginPresenter : LoginEventHandler {
     
     func handleLogin(userName : String, password : String) {
         println("Trying to log in with un: \(userName), pw: \(password)")
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), { [weak self] () -> Void in
+            let loginService = LoginService()
+            loginService.login(userName: userName, password: password, completion: { (user) -> () in
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    if let user = user {
+                        self?.loginWireFrame?.presentLandingScreen(user)
+                    }
+                    else {
+                        self?.loginView?.displayLoginError()
+                    }
+                })
+            })
+        })
     }
     
     func handleForgottenPassword() {
-        println("Forgotten Password Event")
+        loginWireFrame?.presentForgottenPasswordScreen()
     }
 }

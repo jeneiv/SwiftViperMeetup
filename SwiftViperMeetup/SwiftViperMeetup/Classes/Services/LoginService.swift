@@ -8,14 +8,18 @@
 
 import Foundation
 
+typealias LoginCompletion = (user : User?) -> ()
+
+
 class LoginService {
-    func login(userName : String, password : String) -> User? {
+    func login(#userName : String, password : String, completion : LoginCompletion) {
         var user : User? = Optional.None
         
+        sleep(3)
         if userName == "frank" && password == "1234" {
             user = User(id: 1, name: "Frank")
         }
         
-        return user
+        completion(user: user)
     }
 }
