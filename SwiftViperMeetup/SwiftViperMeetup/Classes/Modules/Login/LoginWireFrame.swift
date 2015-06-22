@@ -17,6 +17,7 @@ protocol LoginRouter : class {
 class LoginWireFrame : LoginRouter {
     private var loginView : LoginViewController
     private var loginPresenter : LoginPresenter
+    private var itemListWireFrame : ItemListWireFrame?
     
     init() {
         loginView = LoginViewController.loginView()
@@ -33,6 +34,8 @@ class LoginWireFrame : LoginRouter {
 extension LoginWireFrame {
     func presentLandingScreen(user : User) {
         println("presenting landing screen for \(user.name)")
+        itemListWireFrame = ItemListWireFrame()
+        loginView.navigationController!.pushViewController(itemListWireFrame!.itemListView, animated: true)
     }
     
     func presentForgottenPasswordScreen() {

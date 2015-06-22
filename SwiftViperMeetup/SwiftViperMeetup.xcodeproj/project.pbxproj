@@ -15,6 +15,16 @@
 		159A3C011B37E13F00DA4A71 /* UserProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159A3BFF1B37E13F00DA4A71 /* UserProfilePresenter.swift */; };
 		159A3C041B37FD5F00DA4A71 /* LoginServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159A3C031B37FD5F00DA4A71 /* LoginServiceTest.swift */; };
 		159A3C061B38046400DA4A71 /* LoginPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159A3C051B38046400DA4A71 /* LoginPresenterTest.swift */; };
+		159A3C091B38265200DA4A71 /* ItemListWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159A3C081B38265200DA4A71 /* ItemListWireFrame.swift */; };
+		159A3C0A1B38265200DA4A71 /* ItemListWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159A3C081B38265200DA4A71 /* ItemListWireFrame.swift */; };
+		159A3C0C1B38268C00DA4A71 /* ItemListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159A3C0B1B38268C00DA4A71 /* ItemListPresenter.swift */; };
+		159A3C0D1B38268C00DA4A71 /* ItemListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159A3C0B1B38268C00DA4A71 /* ItemListPresenter.swift */; };
+		159A3C0F1B3826E400DA4A71 /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159A3C0E1B3826E400DA4A71 /* ItemListView.swift */; };
+		159A3C101B3826E400DA4A71 /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159A3C0E1B3826E400DA4A71 /* ItemListView.swift */; };
+		159A3C151B38318A00DA4A71 /* ItemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159A3C141B38318A00DA4A71 /* ItemService.swift */; };
+		159A3C161B38318A00DA4A71 /* ItemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159A3C141B38318A00DA4A71 /* ItemService.swift */; };
+		159A3C181B3831A500DA4A71 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159A3C171B3831A500DA4A71 /* Item.swift */; };
+		159A3C191B3831A500DA4A71 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159A3C171B3831A500DA4A71 /* Item.swift */; };
 		15A166DC1B2F1910009BEADD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A166DB1B2F1910009BEADD /* AppDelegate.swift */; };
 		15A166E11B2F1910009BEADD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15A166DF1B2F1910009BEADD /* Main.storyboard */; };
 		15A166E31B2F1910009BEADD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15A166E21B2F1910009BEADD /* Images.xcassets */; };
@@ -47,6 +57,11 @@
 		159A3BFF1B37E13F00DA4A71 /* UserProfilePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserProfilePresenter.swift; path = Classes/Modules/UserProfile/UserProfilePresenter.swift; sourceTree = "<group>"; };
 		159A3C031B37FD5F00DA4A71 /* LoginServiceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginServiceTest.swift; path = Login/LoginServiceTest.swift; sourceTree = "<group>"; };
 		159A3C051B38046400DA4A71 /* LoginPresenterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginPresenterTest.swift; path = Login/LoginPresenterTest.swift; sourceTree = "<group>"; };
+		159A3C081B38265200DA4A71 /* ItemListWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemListWireFrame.swift; path = Classes/Modules/ItemList/ItemListWireFrame.swift; sourceTree = "<group>"; };
+		159A3C0B1B38268C00DA4A71 /* ItemListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemListPresenter.swift; path = Classes/Modules/ItemList/ItemListPresenter.swift; sourceTree = "<group>"; };
+		159A3C0E1B3826E400DA4A71 /* ItemListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemListView.swift; path = Classes/Modules/ItemList/ItemListView.swift; sourceTree = "<group>"; };
+		159A3C141B38318A00DA4A71 /* ItemService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemService.swift; path = Classes/Services/ItemService.swift; sourceTree = "<group>"; };
+		159A3C171B3831A500DA4A71 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = Classes/Entities/Item.swift; sourceTree = "<group>"; };
 		15A166D61B2F1910009BEADD /* SwiftViperMeetup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftViperMeetup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15A166DA1B2F1910009BEADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15A166DB1B2F1910009BEADD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +112,16 @@
 				159A3C051B38046400DA4A71 /* LoginPresenterTest.swift */,
 			);
 			name = Login;
+			sourceTree = "<group>";
+		};
+		159A3C071B38262600DA4A71 /* ItemList */ = {
+			isa = PBXGroup;
+			children = (
+				159A3C081B38265200DA4A71 /* ItemListWireFrame.swift */,
+				159A3C0B1B38268C00DA4A71 /* ItemListPresenter.swift */,
+				159A3C0E1B3826E400DA4A71 /* ItemListView.swift */,
+			);
+			name = ItemList;
 			sourceTree = "<group>";
 		};
 		15A166CD1B2F1910009BEADD = {
@@ -165,6 +190,7 @@
 		15A166FC1B2F2159009BEADD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				159A3C071B38262600DA4A71 /* ItemList */,
 				159A3BF81B37E0A400DA4A71 /* UserProfile */,
 				15A166FE1B2F217A009BEADD /* Login */,
 			);
@@ -195,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				15A167091B2F222C009BEADD /* User.swift */,
+				159A3C171B3831A500DA4A71 /* Item.swift */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -202,6 +229,7 @@
 		15A1670C1B2F2258009BEADD /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				159A3C141B38318A00DA4A71 /* ItemService.swift */,
 				15A1670D1B2F226D009BEADD /* LoginService.swift */,
 			);
 			name = Services;
@@ -319,9 +347,14 @@
 				15A167031B2F21CD009BEADD /* LoginPresenter.swift in Sources */,
 				159A3BFA1B37E0ED00DA4A71 /* UserProfileWireFrame.swift in Sources */,
 				15A1670E1B2F226D009BEADD /* LoginService.swift in Sources */,
+				159A3C091B38265200DA4A71 /* ItemListWireFrame.swift in Sources */,
+				159A3C181B3831A500DA4A71 /* Item.swift in Sources */,
 				159A3BFD1B37E11100DA4A71 /* UserProfileView.swift in Sources */,
 				159A3C001B37E13F00DA4A71 /* UserProfilePresenter.swift in Sources */,
 				15A167001B2F21AE009BEADD /* LoginWireFrame.swift in Sources */,
+				159A3C0F1B3826E400DA4A71 /* ItemListView.swift in Sources */,
+				159A3C0C1B38268C00DA4A71 /* ItemListPresenter.swift in Sources */,
+				159A3C151B38318A00DA4A71 /* ItemService.swift in Sources */,
 				15A167061B2F21E4009BEADD /* LoginView.swift in Sources */,
 				15A1670A1B2F222C009BEADD /* User.swift in Sources */,
 				15A166DC1B2F1910009BEADD /* AppDelegate.swift in Sources */,
@@ -332,12 +365,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				159A3C161B38318A00DA4A71 /* ItemService.swift in Sources */,
 				15A167041B2F21CD009BEADD /* LoginPresenter.swift in Sources */,
+				159A3C101B3826E400DA4A71 /* ItemListView.swift in Sources */,
+				159A3C0D1B38268C00DA4A71 /* ItemListPresenter.swift in Sources */,
 				159A3BFB1B37E0ED00DA4A71 /* UserProfileWireFrame.swift in Sources */,
 				159A3C041B37FD5F00DA4A71 /* LoginServiceTest.swift in Sources */,
 				15A1670F1B2F226D009BEADD /* LoginService.swift in Sources */,
 				159A3C061B38046400DA4A71 /* LoginPresenterTest.swift in Sources */,
+				159A3C0A1B38265200DA4A71 /* ItemListWireFrame.swift in Sources */,
 				159A3BFE1B37E11100DA4A71 /* UserProfileView.swift in Sources */,
+				159A3C191B3831A500DA4A71 /* Item.swift in Sources */,
 				159A3C011B37E13F00DA4A71 /* UserProfilePresenter.swift in Sources */,
 				15A167011B2F21AE009BEADD /* LoginWireFrame.swift in Sources */,
 				15A167071B2F21E4009BEADD /* LoginView.swift in Sources */,
