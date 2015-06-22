@@ -13,11 +13,12 @@
 		159A3BFE1B37E11100DA4A71 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159A3BFC1B37E11100DA4A71 /* UserProfileView.swift */; };
 		159A3C001B37E13F00DA4A71 /* UserProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159A3BFF1B37E13F00DA4A71 /* UserProfilePresenter.swift */; };
 		159A3C011B37E13F00DA4A71 /* UserProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159A3BFF1B37E13F00DA4A71 /* UserProfilePresenter.swift */; };
+		159A3C041B37FD5F00DA4A71 /* LoginServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159A3C031B37FD5F00DA4A71 /* LoginServiceTest.swift */; };
+		159A3C061B38046400DA4A71 /* LoginPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159A3C051B38046400DA4A71 /* LoginPresenterTest.swift */; };
 		15A166DC1B2F1910009BEADD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A166DB1B2F1910009BEADD /* AppDelegate.swift */; };
 		15A166E11B2F1910009BEADD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15A166DF1B2F1910009BEADD /* Main.storyboard */; };
 		15A166E31B2F1910009BEADD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15A166E21B2F1910009BEADD /* Images.xcassets */; };
 		15A166E61B2F1910009BEADD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15A166E41B2F1910009BEADD /* LaunchScreen.xib */; };
-		15A166F21B2F1910009BEADD /* SwiftViperMeetupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A166F11B2F1910009BEADD /* SwiftViperMeetupTests.swift */; };
 		15A167001B2F21AE009BEADD /* LoginWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A166FF1B2F21AE009BEADD /* LoginWireFrame.swift */; };
 		15A167011B2F21AE009BEADD /* LoginWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A166FF1B2F21AE009BEADD /* LoginWireFrame.swift */; };
 		15A167031B2F21CD009BEADD /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A167021B2F21CD009BEADD /* LoginPresenter.swift */; };
@@ -44,6 +45,8 @@
 		159A3BF91B37E0ED00DA4A71 /* UserProfileWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserProfileWireFrame.swift; path = Classes/Modules/UserProfile/UserProfileWireFrame.swift; sourceTree = "<group>"; };
 		159A3BFC1B37E11100DA4A71 /* UserProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserProfileView.swift; path = Classes/Modules/UserProfile/UserProfileView.swift; sourceTree = "<group>"; };
 		159A3BFF1B37E13F00DA4A71 /* UserProfilePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserProfilePresenter.swift; path = Classes/Modules/UserProfile/UserProfilePresenter.swift; sourceTree = "<group>"; };
+		159A3C031B37FD5F00DA4A71 /* LoginServiceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginServiceTest.swift; path = Login/LoginServiceTest.swift; sourceTree = "<group>"; };
+		159A3C051B38046400DA4A71 /* LoginPresenterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginPresenterTest.swift; path = Login/LoginPresenterTest.swift; sourceTree = "<group>"; };
 		15A166D61B2F1910009BEADD /* SwiftViperMeetup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftViperMeetup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15A166DA1B2F1910009BEADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15A166DB1B2F1910009BEADD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -52,7 +55,6 @@
 		15A166E51B2F1910009BEADD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		15A166EB1B2F1910009BEADD /* SwiftViperMeetupTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftViperMeetupTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15A166F01B2F1910009BEADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		15A166F11B2F1910009BEADD /* SwiftViperMeetupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftViperMeetupTests.swift; sourceTree = "<group>"; };
 		15A166FF1B2F21AE009BEADD /* LoginWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginWireFrame.swift; path = Classes/Modules/Login/LoginWireFrame.swift; sourceTree = "<group>"; };
 		15A167021B2F21CD009BEADD /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginPresenter.swift; path = Classes/Modules/Login/LoginPresenter.swift; sourceTree = "<group>"; };
 		15A167051B2F21E4009BEADD /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = Classes/Modules/Login/LoginView.swift; sourceTree = "<group>"; };
@@ -86,6 +88,15 @@
 				159A3BFC1B37E11100DA4A71 /* UserProfileView.swift */,
 			);
 			name = UserProfile;
+			sourceTree = "<group>";
+		};
+		159A3C021B37FD2000DA4A71 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				159A3C031B37FD5F00DA4A71 /* LoginServiceTest.swift */,
+				159A3C051B38046400DA4A71 /* LoginPresenterTest.swift */,
+			);
+			name = Login;
 			sourceTree = "<group>";
 		};
 		15A166CD1B2F1910009BEADD = {
@@ -127,7 +138,7 @@
 		15A166EE1B2F1910009BEADD /* SwiftViperMeetupTests */ = {
 			isa = PBXGroup;
 			children = (
-				15A166F11B2F1910009BEADD /* SwiftViperMeetupTests.swift */,
+				159A3C021B37FD2000DA4A71 /* Login */,
 				15A166EF1B2F1910009BEADD /* Supporting Files */,
 			);
 			path = SwiftViperMeetupTests;
@@ -323,13 +334,14 @@
 			files = (
 				15A167041B2F21CD009BEADD /* LoginPresenter.swift in Sources */,
 				159A3BFB1B37E0ED00DA4A71 /* UserProfileWireFrame.swift in Sources */,
+				159A3C041B37FD5F00DA4A71 /* LoginServiceTest.swift in Sources */,
 				15A1670F1B2F226D009BEADD /* LoginService.swift in Sources */,
+				159A3C061B38046400DA4A71 /* LoginPresenterTest.swift in Sources */,
 				159A3BFE1B37E11100DA4A71 /* UserProfileView.swift in Sources */,
 				159A3C011B37E13F00DA4A71 /* UserProfilePresenter.swift in Sources */,
 				15A167011B2F21AE009BEADD /* LoginWireFrame.swift in Sources */,
 				15A167071B2F21E4009BEADD /* LoginView.swift in Sources */,
 				15A1670B1B2F222C009BEADD /* User.swift in Sources */,
-				15A166F21B2F1910009BEADD /* SwiftViperMeetupTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
