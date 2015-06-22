@@ -11,6 +11,8 @@ import Foundation
 class User {
     var id : Int
     var name : String
+    var imageURL : NSURL?
+    var address : String?
     
     init(id : Int, name : String) {
         self.id = id

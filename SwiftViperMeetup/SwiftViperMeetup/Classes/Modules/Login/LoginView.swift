@@ -11,7 +11,6 @@ import UIKit
 
 protocol LoginView : class {
     weak var loginPresenter : LoginEventHandler? {get set}
-    
     func displayLoginError()
 }
 

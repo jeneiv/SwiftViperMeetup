@@ -121,5 +121,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--User Profile View Controller-->
+        <scene sceneID="KLW-f6-hnB">
+            <objects>
+                <viewController storyboardIdentifier="UserProfileViewController" id="AAS-22-Zic" customClass="UserProfileViewController" customModule="SwiftViperMeetup" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tn9-n1-kE6"/>
+                        <viewControllerLayoutGuide type="bottom" id="NE0-VG-j3j"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fix-gt-KfL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="view" destination="Fix-gt-KfL" id="jfT-3s-eB3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qsX-Pn-iLo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1072" y="393"/>
+        </scene>
     </scenes>
 </document>
