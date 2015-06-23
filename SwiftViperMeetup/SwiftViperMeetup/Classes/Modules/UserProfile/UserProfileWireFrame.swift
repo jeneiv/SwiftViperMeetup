@@ -11,6 +11,7 @@ import UIKit
 
 protocol UserProfileRouter : class {
     func dismissUserProfile()
+    func viewController() -> UIViewController
 }
 
 class UserProfileWireFrame {

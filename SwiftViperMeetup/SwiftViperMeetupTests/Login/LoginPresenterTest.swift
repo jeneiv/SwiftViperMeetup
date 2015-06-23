@@ -11,8 +11,8 @@ import XCTest
 
 class LoginPresenterTest: XCTestCase {
     var presenter : LoginPresenter?
-    var view : MockView?
-    var wireFrame : MockWireFrame?
+    private var view : MockView?
+    private var wireFrame : MockWireFrame?
 
     override func setUp() {
         super.setUp()
@@ -52,7 +52,7 @@ class LoginPresenterTest: XCTestCase {
 }
 
 extension LoginPresenterTest {
-    class MockView : LoginView {
+    private class MockView : LoginView {
         weak var loginPresenter : LoginEventHandler?
         var expectation : XCTestExpectation?
         
@@ -61,7 +61,7 @@ extension LoginPresenterTest {
         }
     }
     
-    class MockWireFrame : LoginRouter {
+    private class MockWireFrame : LoginRouter {
         var presentLandingScreenCalled = false
         var presentForgottenPasswordCalled = false
         var expectation : XCTestExpectation?
@@ -72,6 +72,10 @@ extension LoginPresenterTest {
         
         func presentForgottenPasswordScreen() {
             presentForgottenPasswordCalled = true
+        }
+        
+        func viewController() -> UIViewController {
+            return UIViewController()
         }
     }
 

@@ -12,6 +12,8 @@ import UIKit
 protocol LoginRouter : class {
     func presentLandingScreen(user : User)
     func presentForgottenPasswordScreen()
+    
+    func viewController() -> UIViewController
 }
 
 class LoginWireFrame : LoginRouter {

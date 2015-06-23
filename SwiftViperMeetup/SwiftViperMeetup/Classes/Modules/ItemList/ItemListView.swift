@@ -12,6 +12,12 @@ import UIKit
 class ItemListViewController : UITableViewController {
     private let CellIdentifier = "ItemCellIDentifier"
     weak var itemListPresenter : protocol <ItemListEventHandler, ItemListDataProvider>?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        title = "Items"
+    }
 }
 
 extension ItemListViewController : UITableViewDataSource {
